@@ -1,5 +1,7 @@
 package zadania.Sekcja16Klasy.zadanie3;
 
+import zadania.sekcja20WyjatkiZadania.LiczbaUjemnaException;
+
 public class Matma {
 
 
@@ -20,6 +22,13 @@ public class Matma {
     public static final double PI = 3.14;
 
     public static double obwodKola(double r){
+
+        // dodałem warunek sprawdzający, aby w przypadku liczby ujemnej
+        // nie pojawił sie nam wynik
+        // zadania 3 z sekcji 20
+        if (r < 0){
+            throw new LiczbaUjemnaException();
+        }
         return  2*PI*r;
     }
 
