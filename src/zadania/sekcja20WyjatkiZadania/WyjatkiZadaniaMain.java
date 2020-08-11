@@ -21,10 +21,10 @@ public class WyjatkiZadaniaMain {
         int a = 4;
         int b = 0;
         try{
-            //w tym miejscu wykonujemy dzielenie
             int c = a/b;
             System.out.println(c);
         } catch(ArithmeticException e) {
+
             // tutaj obsługujemy błąc, który występuje przy dzieleniu przez 0
             System.out.println("Nie wolno dzielić przez 0");
         }
@@ -40,14 +40,11 @@ public class WyjatkiZadaniaMain {
          *
          */
 
-        // zadanie przy wykorzysatniu ty catch
         try {
             System.out.println("Wynik z zadania 2 to : " + dzielenieZadanieDrugie(4,0));
         } catch (WlasnyWyjatekDoZadaniaDrugiego e) {
             System.out.println("Nie mozesz dzielic przez 0");
         }
-
-
 
         /**
          *
@@ -57,7 +54,7 @@ public class WyjatkiZadaniaMain {
          * jeżeli promień będzie ujemny wyrzuć wyjątek "LiczbaUjemnaException". Przetestuj w main podając za promień liczbę ujemną.
          */
 
-        // utowrzenie i import obiektu z innej klasy
+        // utowrzenie i import obiektu z innej klasy sekcja16Klasy.zadanie3
         Matma kolo = new Matma();
         System.out.println("\n Wynik z zadania 3, przy liczbie r dodatniej");
         System.out.println(kolo.obwodKola (2));
