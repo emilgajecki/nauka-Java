@@ -6,7 +6,7 @@ public class MainWatkiSleep {
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 10; i++) {
+                for (int i = 0; i < 100; i++) {
                     System.out.println("Watek1 :" + i);
 
                     /**
@@ -27,7 +27,7 @@ public class MainWatkiSleep {
         Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int j = 0; j < 10; j++) {
+                for (int j = 0; j < 100; j++) {
                     System.out.println("Watek2 :" + j);
                 }
             }

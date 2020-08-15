@@ -9,7 +9,7 @@ public class MainWyjatkiRunnable {
          */
 
         Thread thread = new Thread(new MojWatek());
-        thread.run();
+        thread.start();
 
         /**
          * Tworzenie przy pomocy klasy anonimowej
@@ -23,7 +23,7 @@ public class MainWyjatkiRunnable {
                 }
             }
         });
-        thread2.run();
+        thread2.start();
 
         /**
          * Trzecia mozliwość utworzenia wątków bez przypisania - do zastosowania tylko raz
@@ -36,7 +36,7 @@ public class MainWyjatkiRunnable {
                     System.out.println("działam bez przypisania " + k);
                 }
             }
-        }).run();
+        }).start();
     }
 }
 
