@@ -1,6 +1,4 @@
-package zadania.sekcja5ZmienneIOperatory;
-
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+package zadania.sekcja05ZmienneIOperatory;
 
 public class ZadanieZmienneIOperatoryMain {
 

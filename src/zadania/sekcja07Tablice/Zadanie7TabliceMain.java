@@ -1,4 +1,4 @@
-package zadania.sekcja7Tablice;
+package zadania.sekcja07Tablice;
 
 
 public class Zadanie7TabliceMain {

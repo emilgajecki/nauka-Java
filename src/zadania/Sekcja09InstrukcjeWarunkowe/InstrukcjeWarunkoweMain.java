@@ -1,4 +1,4 @@
-package zadania.Sekcja9InstrukcjeWarunkowe;
+package zadania.Sekcja09InstrukcjeWarunkowe;
 
 public class InstrukcjeWarunkoweMain {
     public static void main(String[] args) {
