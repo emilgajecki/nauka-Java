@@ -2,7 +2,7 @@ package zadania.sekcja27Paradygmaty.telewizory.Samsung;
 
 import zadania.sekcja27Paradygmaty.telewizory.Telewizor;
 
-public abstract class TelewizorSamsung implements Telewizor {
+public abstract class TelewizorSamsung implements Telewizor{
 
     private  boolean stanWlaczony =false;
     private int numerKanalu=1;
@@ -11,6 +11,15 @@ public abstract class TelewizorSamsung implements Telewizor {
      protected TelewizorSamsung(int cale){
          this.cale = cale;
      }
+
+    @Override
+    public void akcjaZailania() {
+        if(stanWlaczony){
+            wylacz();
+        } else {
+            wlacz();
+        }
+    }
 
     //uruchamiamy telewizro przełącznikem
     @Override

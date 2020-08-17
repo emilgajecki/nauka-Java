@@ -6,4 +6,6 @@ public interface Telewizor {
     void wylacz();
 
     void zmienKanal(int numerKanalu);
+
+    void akcjaZailania();
 }

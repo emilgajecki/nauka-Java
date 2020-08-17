@@ -23,6 +23,16 @@ public abstract class TelewizorPhilips implements Telewizor {
     }
 
     @Override
+    public void akcjaZailania() {
+        if(statusWlaczony){
+            wylacz();
+        } else {
+            wlacz();
+        }
+    }
+
+
+    @Override
     public void wlacz() {
         statusWlaczony=true;
         emitujNaEkran();

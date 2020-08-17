@@ -8,12 +8,14 @@ import java.util.Scanner;
 public class MainPPPodsumowanie {
 
     public static void main(String[] args) {
-        obslugaTelewizora();
+ //       obslugaTelewizora();
+        obslugaPilota();
     }
+
 
     private static void obslugaTelewizora(){
         Scanner scanner = new Scanner(System.in);
-        P43PUS652 tv = new P43PUS652("UnikalneId123");
+        Telewizor tv = new UE43RU7172("UnikalneId123");
 
         int opcja =0;
         System.out.println("1.Włącz TV; 2.Wyłącz; 3.Zmień program; 4.Zakończ");
@@ -32,6 +34,35 @@ public class MainPPPodsumowanie {
                     tv.zmienKanal(mumer);
                     break;
             }
-        }
+        }scanner.close();
+    }
+
+    private static void obslugaPilota(){
+        Pilot pilot = new PilotNoName() ;
+        Telewizor telewizor = new UE43RU7172("SuperUnikalneID123") ;
+        pilot.sparujTelewizor(telewizor);
+        Scanner scanner = new Scanner(System.in);
+        int opcja;
+
+        System.out.println("0. Naciśnij czerwony; 1. Nacisnij 1; 2. Nacisnij 2; 3.Nacisnij 3; 4.Zakoncz");
+
+        do {
+            opcja=scanner.nextInt();
+            switch (opcja){
+                case 0:
+                    pilot.nacisnijCzerwony();
+                    break;
+                case 1:
+                    pilot.nasisnijPrzyciskJeden();
+                    break;
+                case 2:
+                     pilot.nacisnijPrzyciskDwa();
+                     break;
+                case 3:
+                    pilot.nacisnijPrzyciskTrzy();
+                    break;
+            }
+        } while (opcja!=4);
+        scanner.close();
     }
 }
