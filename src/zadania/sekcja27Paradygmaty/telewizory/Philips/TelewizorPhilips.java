@@ -1,9 +1,26 @@
-package zadania.sekcja27Paradygmaty;
+package zadania.sekcja27Paradygmaty.telewizory.Philips;
 
-public abstract class TelewizorPhilips implements Telewizor{
+import zadania.sekcja27Paradygmaty.telewizory.Telewizor;
 
+public abstract class TelewizorPhilips implements Telewizor {
+
+    private String id;
     private boolean statusWlaczony = false;
     private int obecnyProgram = 3;
+    private int cale;
+
+    protected TelewizorPhilips (String id,int cale){
+        this.id= id;
+        this.cale = cale;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public int getCale() {
+        return cale;
+    }
 
     @Override
     public void wlacz() {
@@ -22,7 +39,7 @@ public abstract class TelewizorPhilips implements Telewizor{
     @Override
     public void zmienKanal(int numerKanalu) {
         if (statusWlaczony){
-            obecnyProgram=numerKanalu;
+            this.obecnyProgram=numerKanalu;
         }
     }
 

@@ -1,4 +1,4 @@
-package zadania.sekcja27Paradygmaty;
+package zadania.sekcja27Paradygmaty.telewizory.Samsung;
 
 public class UE43RU7172 extends TelewizorSamsung {
 
@@ -10,7 +10,7 @@ public class UE43RU7172 extends TelewizorSamsung {
     private String usb2;
 
 
-    protected UE43RU7172(String id) {
+    public UE43RU7172(String id) {
         super(43);
     }
 }

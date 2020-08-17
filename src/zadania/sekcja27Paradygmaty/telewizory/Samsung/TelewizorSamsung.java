@@ -1,4 +1,6 @@
-package zadania.sekcja27Paradygmaty;
+package zadania.sekcja27Paradygmaty.telewizory.Samsung;
+
+import zadania.sekcja27Paradygmaty.telewizory.Telewizor;
 
 public abstract class TelewizorSamsung implements Telewizor {
 

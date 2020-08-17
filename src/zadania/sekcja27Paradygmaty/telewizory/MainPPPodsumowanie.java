@@ -1,4 +1,7 @@
-package zadania.sekcja27Paradygmaty;
+package zadania.sekcja27Paradygmaty.telewizory;
+
+import zadania.sekcja27Paradygmaty.telewizory.Philips.P43PUS652;
+import zadania.sekcja27Paradygmaty.telewizory.Samsung.UE43RU7172;
 
 import java.util.Scanner;
 
@@ -10,7 +13,7 @@ public class MainPPPodsumowanie {
 
     private static void obslugaTelewizora(){
         Scanner scanner = new Scanner(System.in);
-        UE43RU7172 tv = new UE43RU7172("UnikalneId123");
+        P43PUS652 tv = new P43PUS652("UnikalneId123");
 
         int opcja =0;
         System.out.println("1.Włącz TV; 2.Wyłącz; 3.Zmień program; 4.Zakończ");

@@ -1,4 +1,4 @@
-package zadania.sekcja27Paradygmaty;
+package zadania.sekcja27Paradygmaty.telewizory;
 
 public interface Telewizor {
 
