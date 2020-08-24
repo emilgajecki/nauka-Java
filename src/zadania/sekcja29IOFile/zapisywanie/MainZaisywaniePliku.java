@@ -10,13 +10,14 @@ public class MainZaisywaniePliku {
 
         try{
         String path = "moj_plik.txt";
-        FileWriter fileWriter = new FileWriter(path);
+        // w konstruktorze musimy dodac append true - pozowli nam to dopisac do aktualnego wpisu
+        FileWriter fileWriter = new FileWriter(path, true);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-        // wszystko zapisze w jedej linii
+        // wszystko zapisze w jedej linii - nadpisze napisane wczesniej
         bufferedWriter.write("Test widaomości \n");
         bufferedWriter.write("Test wiadomości 1\n");
-        bufferedWriter.write("Test.wiadomości 2");
+        bufferedWriter.write("Test.wiadomości 2 \n");
 
         // zostawiamy tutaj bo zakladmy, ze wszysko dobrze sie wykona
         bufferedWriter.close();
