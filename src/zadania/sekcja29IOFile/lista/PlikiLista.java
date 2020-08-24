@@ -41,8 +41,5 @@ public class PlikiLista {
         listaStringow.add("Teskt");
 
         System.out.println(listaStringow);
-
-
-
     }
 }
