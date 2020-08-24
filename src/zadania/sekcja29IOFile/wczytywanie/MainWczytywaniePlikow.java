@@ -1,4 +1,4 @@
-package zadania.sekcja29IOFile;
+package zadania.sekcja29IOFile.wczytywanie;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,5 +21,21 @@ public class MainWczytywaniePlikow {
         } catch (FileNotFoundException e) {
             System.out.println("Nie znaleziono pliku!");
         }
+
+        // wczytanie danych z dysku
+        try {
+            File file = new File("c:/data/cities500.txt");
+            Scanner scanner = new Scanner(file);
+
+            //petla, która bedzie wczytywała dane dopuki bedzie nastepna linijka
+            while (scanner.hasNextLine()){
+                String line = scanner.nextLine();
+                System.out.println(line);
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Nie znaleziono pliku!");
+        }
+
+
     }
 }
