@@ -33,9 +33,11 @@ public class MainZadanie {
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
+            // tworzymy nowwy plik
             String sciezka = "fragment-kopia.txt";
+            //Tworzymy writera
             FileWriter fileWriter = new FileWriter(sciezka);
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             Scanner scanner = new Scanner(System.in);
             System.out.println("Podaj szukaną fraze");
             String szukanaFraza = scanner.nextLine();
@@ -75,12 +77,13 @@ public class MainZadanie {
                 /**
                  * Zadanie e
                  */
-                bufferedWriter.write(linia);
+                bufferedWriter.write(linia+ "\n");
             }
             System.out.println("\nLiczba znakow "+ liczbaZnakow);
             System.out.println("Czy zawiera fraze "+czyZawieraFraze);
 
             // zamykanie źródeł
+            bufferedWriter.write("\nKopia pliku utworzona przez Emila Gajęckiego");
             bufferedReader.close();
             bufferedWriter.close();
             scanner.close();
