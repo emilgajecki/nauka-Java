@@ -14,8 +14,8 @@ public class MainZaisywaniePliku {
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
         // wszystko zapisze w jedej linii
-        bufferedWriter.write("Test widaomości");
-        bufferedWriter.write("Test wiadomości 1");
+        bufferedWriter.write("Test widaomości \n");
+        bufferedWriter.write("Test wiadomości 1\n");
         bufferedWriter.write("Test.wiadomości 2");
 
         // zostawiamy tutaj bo zakladmy, ze wszysko dobrze sie wykona
